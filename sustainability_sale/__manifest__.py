@@ -1,11 +1,11 @@
 {
     "name": "Sustainability Sale",
     "version": "18.0.1.1.0",
-    "author": "MCO2, Open Net Sàrl",
+    "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jacopobacci"],
     "development_status": "Production/Stable",
     "category": "Sales/Sales",
-    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "website": "https://github.com/OCA/sustainability",
     "summary": "Glue module for sustainability & sale modules",
     "depends": [
         "sustainability",
