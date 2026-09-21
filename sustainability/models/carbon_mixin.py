@@ -157,10 +157,10 @@ class CarbonMixin(models.AbstractModel):
 
             if str(uom_id) not in self._fields:
                 raise ValidationError(
-                    _(
-                        "Field %s not exists in model %s",
-                        uom_id,
-                        self._name,
+                    self.env._(
+                        "Field %(field_name)s not exists in model %(model_name)s",
+                        field_name=uom_id,
+                        model_name=self._name,
                     )
                 )
 
@@ -290,15 +290,13 @@ class CarbonMixin(models.AbstractModel):
                 record.has_valid_carbon_distribution("out")
             )
 
-    """
-    It is possible to override the 2 following methods with some rules
-        - The override should call super() or at least the abstract method correctly
-        - You can add depends to trigger changes for records in 'auto' mode
-        - Don't use general depends, use carbon fields even if you have to add a lot. E.g
-            GOOD > @api.depends('product_tmpl_id.carbon_value', 'product_tmpl_id.carbon_in_compute_method', etc...)
-            BAD  > @api.depends('product_tmpl_id')
-            common related fields are: 'value', 'compute_method', 'uom_id', 'monetary_currency_id'
-    """
+    # It is possible to override the 2 following methods with some rules
+    #     - The override should call super() or at least the abstract method correctly
+    #     - You can add depends to trigger changes for records in 'auto' mode
+    #     - Don't use general depends, use carbon fields even if you have to add a lot. E.g
+    #         GOOD > @api.depends('product_tmpl_id.carbon_value', 'product_tmpl_id.carbon_in_compute_method', etc...)
+    #         BAD  > @api.depends('product_tmpl_id')
+    #         common related fields are: 'value', 'compute_method', 'uom_id', 'monetary_currency_id'
 
     @api.depends("carbon_in_is_manual")
     def _compute_carbon_in_mode(self):
@@ -334,11 +332,9 @@ class CarbonMixin(models.AbstractModel):
                 }
             )
 
-    """
-    Override these methods to add fallback records to search for carbon values
-        > e.g. on product.product, get factor from template or category if record value is not valid
-    Order matters, you can insert a record where it fits the most
-    """
+    # Override these methods to add fallback records to search for carbon values
+    #     > e.g. on product.product, get factor from template or category if record value is not valid
+    # Order matters, you can insert a record where it fits the most
 
     def _get_carbon_in_fallback_records(self) -> list[Any]:
         if not self:
@@ -459,10 +455,10 @@ class CarbonMixin(models.AbstractModel):
                         else:
                             if not self.env.context.get("auto_carbon_distribution"):
                                 raise UserError(
-                                    _(
-                                        "Missing carbon factor for %s (carbon type: %s)",
-                                        record._get_record_description(),
-                                        carbon_type,
+                                    self.env._(
+                                        "Missing carbon factor for %(record_description)s (carbon type: %(carbon_type)s)",
+                                        record_description=record._get_record_description(),
+                                        carbon_type=carbon_type,
                                     )
                                 )
                     else:
@@ -484,10 +480,10 @@ class CarbonMixin(models.AbstractModel):
                         elif not record._get_distribution_lines(carbon_type):
                             if not self.env.context.get("auto_carbon_distribution"):
                                 raise UserError(
-                                    _(
-                                        "Missing carbon distribution for %s (carbon type: %s)",
-                                        record._get_record_description(),
-                                        carbon_type,
+                                    self.env._(
+                                        "Missing carbon distribution for %(record_description)s (carbon type: %(carbon_type)s)",
+                                        record_description=record._get_record_description(),
+                                        carbon_type=carbon_type,
                                     )
                                 )
         self.env["carbon.distribution.line"].create(lines_vals_list)
