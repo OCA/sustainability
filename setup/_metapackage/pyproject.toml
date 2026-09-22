@@ -1,5 +1,5 @@
 [project]
-name = "odoo-addons-sustainability-suite-sustainability-odoo"
+name = "odoo-addons-oca-sustainability"
 version = "17.0.20250729.0"
 dependencies = [
     "odoo-addon-sustainability>=17.0dev,<17.1dev",
