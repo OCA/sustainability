@@ -359,10 +359,10 @@ class CarbonFactor(models.Model):
             )
         if len(distribution) != len(self):
             raise ValidationError(
-                _(
-                    "The factor count is different from the distribution keys count (factor count: %s, keys count: %s)",
-                    len(self),
-                    len(distribution),
+                self.env._(
+                    "The factor count is different from the distribution keys count (factor count: %(factor_count)s, keys count: %(keys_count)s)",
+                    factor_count=len(self),
+                    keys_count=len(distribution),
                 )
             )
 
@@ -585,13 +585,14 @@ class CarbonFactor(models.Model):
                 )
             else:
                 raise ValidationError(
-                    _(
-                        f"The unit of measure set for %s (%s - %s) is not in the same category as its carbon unit of measure (%s - %s){ref_str}",
-                        self.name,
-                        from_uom_id.name,
-                        from_uom_id.category_id.name,
-                        factor_value.carbon_uom_id.name,
-                        factor_value.carbon_uom_id.category_id.name,
+                    self.env._(
+                        "The unit of measure '%(from_uom)s' (%(from_uom_category)s) is not in the same category as the carbon unit of measure '%(carbon_uom)s' (%(carbon_uom_category)s) for %(product)s%(ref_str)s",
+                        product=self.name,
+                        from_uom=from_uom_id.name,
+                        from_uom_category=from_uom_id.category_id.name,
+                        carbon_uom=factor_value.carbon_uom_id.name,
+                        carbon_uom_category=factor_value.carbon_uom_id.category_id.name,
+                        ref_str=ref_str,
                     )
                 )
         # If not physical or missing data, return None
