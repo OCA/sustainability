@@ -1,11 +1,11 @@
 {
     "name": "Sustainability Purchase",
     "version": "19.0.1.0.0",
-    "author": "MCO2, Open Net Sàrl",
+    "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jguenat", "bonnetadam", "jacopobacci"],
     "development_status": "Production/Stable",
     "category": "Accounting/Sustainability",
-    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "website": "https://github.com/OCA/sustainability",
     "summary": "Glue module for sustainability & purchase modules",
     "depends": [
         "sustainability",
