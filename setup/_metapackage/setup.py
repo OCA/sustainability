@@ -4,8 +4,8 @@ with open('VERSION.txt', 'r') as f:
     version = f.read().strip()
 
 setuptools.setup(
-    name="odoo-addons-sustainability-suite-sustainability-odoo",
-    description="Meta package for sustainability-suite-sustainability-odoo Odoo addons",
+    name="odoo-addons-oca-sustainability",
+    description="Meta package for oca-sustainability Odoo addons",
     version=version,
     install_requires=[
         'odoo-addon-sustainability>=16.0dev,<16.1dev',
