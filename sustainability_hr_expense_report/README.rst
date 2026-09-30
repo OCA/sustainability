@@ -1,3 +1,7 @@
+.. image:: https://odoo-community.org/readme-banner-image
+   :target: https://odoo-community.org/get-involved?utm_source=readme
+   :alt: Odoo Community Association
+
 ======================
 CO2 : Expense Reports 
 ======================
@@ -13,14 +17,20 @@ CO2 : Expense Reports
 .. |badge1| image:: https://img.shields.io/badge/maturity-Alpha-red.png
     :target: https://odoo-community.org/page/development-status
     :alt: Alpha
-.. |badge2| image:: https://img.shields.io/badge/licence-AGPL--3-blue.png
+.. |badge2| image:: https://img.shields.io/badge/license-AGPL--3-blue.png
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
-.. |badge3| image:: https://img.shields.io/badge/github-sustainability--suite%2Fsustainability--odoo-lightgray.png?logo=github
-    :target: https://github.com/sustainability-suite/sustainability-odoo/tree/18.0/sustainability_hr_expense_report
-    :alt: sustainability-suite/sustainability-odoo
+.. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fsustainability-lightgray.png?logo=github
+    :target: https://github.com/OCA/sustainability/tree/18.0/sustainability_hr_expense_report
+    :alt: OCA/sustainability
+.. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
+    :target: https://translation.odoo-community.org/projects/sustainability-18-0/sustainability-18-0-sustainability_hr_expense_report
+    :alt: Translate me on Weblate
+.. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
+    :target: https://runboat.odoo-community.org/builds?repo=OCA/sustainability&target_branch=18.0
+    :alt: Try me on Runboat
 
-|badge1| |badge2| |badge3|
+|badge1| |badge2| |badge3| |badge4| |badge5|
 
 Provide CO2 accounting data for expense reports
 
@@ -37,10 +47,10 @@ Provide CO2 accounting data for expense reports
 Bug Tracker
 ===========
 
-Bugs are tracked on `GitHub Issues <https://github.com/sustainability-suite/sustainability-odoo/issues>`_.
+Bugs are tracked on `GitHub Issues <https://github.com/OCA/sustainability/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/sustainability-suite/sustainability-odoo/issues/new?body=module:%20sustainability_hr_expense_report%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/OCA/sustainability/issues/new?body=module:%20sustainability_hr_expense_report%0Aversion:%2018.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -62,14 +72,24 @@ Contributors
 Maintainers
 ~~~~~~~~~~~
 
+This module is maintained by the OCA.
+
+.. image:: https://odoo-community.org/logo.png
+   :alt: Odoo Community Association
+   :target: https://odoo-community.org
+
+OCA, or the Odoo Community Association, is a nonprofit organization whose
+mission is to support the collaborative development of Odoo features and
+promote its widespread use.
+
 .. |maintainer-bonnetadam| image:: https://github.com/bonnetadam.png?size=40px
     :target: https://github.com/bonnetadam
     :alt: bonnetadam
 
-Current maintainer:
+Current `maintainer <https://odoo-community.org/page/maintainer-role>`__:
 
 |maintainer-bonnetadam| 
 
-This module is part of the `sustainability-suite/sustainability-odoo <https://github.com/sustainability-suite/sustainability-odoo/tree/18.0/sustainability_hr_expense_report>`_ project on GitHub.
+This module is part of the `OCA/sustainability <https://github.com/OCA/sustainability/tree/18.0/sustainability_hr_expense_report>`_ project on GitHub.
 
-You are welcome to contribute.
+You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.

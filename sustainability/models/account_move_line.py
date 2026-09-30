@@ -72,7 +72,7 @@ class AccountMoveLine(models.Model):
         res["carbon_debt"] = carbon_debt if self.is_carbon_positive else -carbon_debt
         return res
 
-    """ These methods might seem useless but the logic could change in the future so it's better to have them """
+    # These methods might seem useless but the logic could change in the future so it's better to have them
 
     def is_debit(self) -> bool:
         self.ensure_one()

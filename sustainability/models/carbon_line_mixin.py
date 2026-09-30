@@ -135,10 +135,8 @@ class CarbonLineMixin(models.AbstractModel):
                 "sustainability.carbon_kilo", raise_if_not_found=False
             )
 
-    """
-        The 2 following methods are used to filter lines that need to be recomputed.
-        They are split to provide 2 hooks for a better modularity.
-    """
+    # The 2 following methods are used to filter lines that need to be recomputed.
+    # They are split to provide 2 hooks for a better modularity.
 
     def _get_lines_to_compute_domain(self, force_compute: list[str]):
         """Build a domain to filter lines that need to be recomputed"""
@@ -168,7 +166,7 @@ class CarbonLineMixin(models.AbstractModel):
         domain = self._get_lines_to_compute_domain(force_compute=force_compute)
         return self.filtered_domain(domain)
 
-    """ depends need to be overriden to trigger the compute method at the right time """
+    # depends need to be overriden to trigger the compute method at the right time
 
     def _get_carbon_computation_record_and_kwargs(self):
         """
@@ -325,10 +323,10 @@ class CarbonLineMixin(models.AbstractModel):
                     "res_model_id": res_model_id,
                     "res_id": res_id,
                     # Todo: don't set the string here but in the onchange
-                    "comment": _(
-                        "Manually set on %s by %s",
-                        today,
-                        json_details.get("username", _("Unknown User")),
+                    "comment": self.env._(
+                        "Manually set on %(date)s by %(username)s",
+                        date=today,
+                        username=json_details.get("username", _("Unknown User")),
                     ),
                     "value": self.carbon_debt,
                     "carbon_data_uncertainty_percentage": self.carbon_data_uncertainty_percentage,
