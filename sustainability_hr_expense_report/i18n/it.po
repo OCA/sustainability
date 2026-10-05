@@ -6,13 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-10-05 10:46+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: sustainability_hr_expense_report
 #: model:ir.model.fields,help:sustainability_hr_expense_report.field_hr_expense__carbon_debt
@@ -20,55 +22,57 @@ msgid ""
 "A positive value means that your system's debt grows, a negative value means"
 " it shrinks"
 msgstr ""
+"Un valore positivo indica che il debito del sistema aumenta, un valore "
+"negativo indica che diminuisce"
 
 #. module: sustainability_hr_expense_report
 #: model:ir.model.fields,field_description:sustainability_hr_expense_report.field_hr_expense__carbon_debt
 msgid "CO2"
-msgstr ""
+msgstr "CO2"
 
 #. module: sustainability_hr_expense_report
 #: model:ir.model.fields,field_description:sustainability_hr_expense_report.field_hr_expense__carbon_uncertainty_value
 msgid "CO2 Uncertainty"
-msgstr ""
+msgstr "Incertezza CO2"
 
 #. module: sustainability_hr_expense_report
 #: model:ir.model.fields,field_description:sustainability_hr_expense_report.field_hr_expense__carbon_data_uncertainty_percentage
 msgid "CO2 Uncertainty %"
-msgstr ""
+msgstr "% incertezza CO2"
 
 #. module: sustainability_hr_expense_report
 #: model:ir.model.fields,field_description:sustainability_hr_expense_report.field_hr_expense__carbon_currency_id
 msgid "Carbon Currency"
-msgstr ""
+msgstr "Valuta carbonio"
 
 #. module: sustainability_hr_expense_report
 #: model:ir.model.fields,field_description:sustainability_hr_expense_report.field_hr_expense__carbon_is_locked
 msgid "Carbon Is Locked"
-msgstr ""
+msgstr "Il carbonio è bloccato"
 
 #. module: sustainability_hr_expense_report
 #: model:ir.model.fields,field_description:sustainability_hr_expense_report.field_hr_expense__carbon_origin_json
 msgid "Carbon Origin Json"
-msgstr ""
+msgstr "JSON origine carbonio"
 
 #. module: sustainability_hr_expense_report
 #: model:ir.model.fields,field_description:sustainability_hr_expense_report.field_hr_expense__carbon_origin_ids
 msgid "Carbon value origin details"
-msgstr ""
+msgstr "Dettaglio origine valore carbonio"
 
 #. module: sustainability_hr_expense_report
 #: model:ir.model,name:sustainability_hr_expense_report.model_hr_expense
 msgid "Expense"
-msgstr ""
+msgstr "Spesa"
 
 #. module: sustainability_hr_expense_report
 #: model_terms:ir.ui.view,arch_db:sustainability_hr_expense_report.hr_expense_sheet_form
 #: model_terms:ir.ui.view,arch_db:sustainability_hr_expense_report.hr_expense_view_form
 msgid "Lock co2"
-msgstr ""
+msgstr "Blocca CO2"
 
 #. module: sustainability_hr_expense_report
 #: model_terms:ir.ui.view,arch_db:sustainability_hr_expense_report.hr_expense_sheet_form
 #: model_terms:ir.ui.view,arch_db:sustainability_hr_expense_report.hr_expense_view_form
 msgid "Unlock co2"
-msgstr ""
+msgstr "Sblocca CO2"
