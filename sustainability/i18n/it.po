@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 18.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-09-29 12:46+0000\n"
+"PO-Revision-Date: 2026-10-12 12:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -1350,23 +1350,23 @@ msgstr "Fattore"
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__factor_category_id
 msgid "Factor Category"
-msgstr ""
+msgstr "Categoria fattore"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__value
 msgid "Factor Value"
-msgstr ""
+msgstr "Valore fattore"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor__factor_value_type_id
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__factor_value_type_id
 msgid "Factor Value Type"
-msgstr ""
+msgstr "Tipo valore fattore"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__factor_value_id
 msgid "Factor value"
-msgstr ""
+msgstr "Valore fattore"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_account_account__carbon_in_fallback_reference
@@ -1380,7 +1380,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sustainability.field_res_partner__carbon_in_fallback_reference
 #: model:ir.model.fields,field_description:sustainability.field_res_users__carbon_in_fallback_reference
 msgid "Fallback record"
-msgstr ""
+msgstr "Record fallback"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_account_account__carbon_out_fallback_reference
@@ -1394,13 +1394,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:sustainability.field_res_partner__carbon_out_fallback_reference
 #: model:ir.model.fields,field_description:sustainability.field_res_users__carbon_out_fallback_reference
 msgid "Fallback record "
-msgstr ""
+msgstr "Record fallback- "
 
 #. module: sustainability
 #. odoo-python
 #: code:addons/sustainability/models/carbon_common_mixin.py:0
 msgid "Field %s is used by multiple buttons"
-msgstr ""
+msgstr "Il campo %s è usato da pulsanti multipli"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor__message_follower_ids
@@ -1412,7 +1412,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_nomenclature_sub_category__message_follower_ids
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_scenario__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Seguito da"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor__message_partner_ids
@@ -1424,7 +1424,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_nomenclature_sub_category__message_partner_ids
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_scenario__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Seguito da (partner)"
 
 #. module: sustainability
 #: model:ir.model.fields,help:sustainability.field_carbon_factor__activity_type_icon
@@ -1436,35 +1436,35 @@ msgstr ""
 #: model:ir.model.fields,help:sustainability.field_sustainability_nomenclature_sub_category__activity_type_icon
 #: model:ir.model.fields,help:sustainability.field_sustainability_scenario__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
+msgstr "Icona Font Awesome es. fa-tasks"
 
 #. module: sustainability
 #: model:uom.uom,name:sustainability.uom_gj
 msgid "GJ"
-msgstr ""
+msgstr "GJ"
 
 #. module: sustainability
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_factor_filter
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_factor_value_report_search
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_filter
 msgid "Group By"
-msgstr ""
+msgstr "Raggruppa per"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor_value__hfc_value
 msgid "HFC (kgCO2e)"
-msgstr ""
+msgstr "HFC (kgCO2e)"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_res_partner__has_computed_carbon_mode
 #: model:ir.model.fields,field_description:sustainability.field_res_users__has_computed_carbon_mode
 msgid "Has Computed Carbon Mode"
-msgstr ""
+msgstr "Ha un modo di calcolo del carbonio"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor__has_invalid_value
 msgid "Has Invalid Value"
-msgstr ""
+msgstr "Ha un valore non valido"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor__has_message
@@ -1476,19 +1476,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_nomenclature_sub_category__has_message
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_scenario__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Ha un messaggio"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor__hierarchy
 msgid "Hierarchy"
-msgstr ""
+msgstr "Gerarchia"
 
 #. module: sustainability
 #: model:ir.model.fields.selection,name:sustainability.selection__sustainability_action__budget__high
 #: model:ir.model.fields.selection,name:sustainability.selection__sustainability_action__complexity__high
 #: model:ir.model.fields.selection,name:sustainability.selection__sustainability_action__reduction_potential__high
 msgid "High"
-msgstr ""
+msgstr "Alto"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_distribution_line__id
@@ -1509,7 +1509,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_nomenclature_sub_category__id
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_scenario__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor__activity_exception_icon
@@ -1521,7 +1521,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_nomenclature_sub_category__activity_exception_icon
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_scenario__activity_exception_icon
 msgid "Icon"
-msgstr ""
+msgstr "Icona"
 
 #. module: sustainability
 #: model:ir.model.fields,help:sustainability.field_carbon_factor__activity_exception_icon
@@ -1533,7 +1533,7 @@ msgstr ""
 #: model:ir.model.fields,help:sustainability.field_sustainability_nomenclature_sub_category__activity_exception_icon
 #: model:ir.model.fields,help:sustainability.field_sustainability_scenario__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Icona per indicare un'attività eccezione."
 
 #. module: sustainability
 #: model:ir.model.fields,help:sustainability.field_carbon_factor__message_needaction
@@ -1545,7 +1545,7 @@ msgstr ""
 #: model:ir.model.fields,help:sustainability.field_sustainability_nomenclature_sub_category__message_needaction
 #: model:ir.model.fields,help:sustainability.field_sustainability_scenario__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Se selezionata, nuovi messaggi richiedono attenzione."
 
 #. module: sustainability
 #: model:ir.model.fields,help:sustainability.field_carbon_factor__message_has_error
@@ -1565,52 +1565,52 @@ msgstr ""
 #: model:ir.model.fields,help:sustainability.field_sustainability_scenario__message_has_error
 #: model:ir.model.fields,help:sustainability.field_sustainability_scenario__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Se selezionata, alcuni messaggi hanno un errore di consegna."
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_action__image
 #: model_terms:ir.ui.view,arch_db:sustainability.sustainability_action_tree
 msgid "Image"
-msgstr ""
+msgstr "Immgine"
 
 #. module: sustainability
 #: model:ir.model.fields.selection,name:sustainability.selection__carbon_distribution_line__carbon_type__in
 msgid "In"
-msgstr ""
+msgstr "In"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__move_date
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_filter
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_tree
 msgid "Invoice Date"
-msgstr ""
+msgstr "Data fattura"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_res_company__invoice_report_footer
 #: model:ir.model.fields,field_description:sustainability.field_res_config_settings__invoice_report_footer
 msgid "Invoice Report Footer"
-msgstr ""
+msgstr "Piè pagina resoconto fattura"
 
 #. module: sustainability
 #: model_terms:ir.ui.view,arch_db:sustainability.res_config_settings_view_form
 msgid "Invoice document footer"
-msgstr ""
+msgstr "Piè pagina documento fattura"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_account_move_line__is_carbon_positive
 msgid "Is Carbon Positive"
-msgstr ""
+msgstr "È positivo al carbonio"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor_value__is_carbon_value_computed
 msgid "Is Carbon Value Computed"
-msgstr ""
+msgstr "È calcolato con il valore carbonio"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_approach_characterization__is_default
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_nomenclature__is_default
 msgid "Is Default"
-msgstr ""
+msgstr "È predefinito"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor__message_is_follower
@@ -1622,35 +1622,35 @@ msgstr ""
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_nomenclature_sub_category__message_is_follower
 #: model:ir.model.fields,field_description:sustainability.field_sustainability_scenario__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Segue"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_factor_value__is_ghg_detailed_value
 msgid "Is Ghg Detailed Value"
-msgstr ""
+msgstr "È il valore dettagliato Ghg"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_account_move_line__is_invoice_line
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__move_line_is_invoice_line
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_filter
 msgid "Is Invoice Line"
-msgstr ""
+msgstr "È riga fattura"
 
 #. module: sustainability
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_filter
 msgid "Is Not Invoice Line"
-msgstr ""
+msgstr "Non è riga fattura"
 
 #. module: sustainability
 #: model:uom.uom,name:sustainability.uom_joule
 msgid "Joule"
-msgstr ""
+msgstr "Joule"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__move_line_journal_id
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_tree
 msgid "Journal"
-msgstr ""
+msgstr "Registro"
 
 #. module: sustainability
 #: model:ir.model,name:sustainability.model_account_move
@@ -1658,20 +1658,20 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_filter
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_tree
 msgid "Journal Entry"
-msgstr ""
+msgstr "Registrazione contabile"
 
 #. module: sustainability
 #: model:ir.model,name:sustainability.model_account_move_line
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__move_line_id
 msgid "Journal Item"
-msgstr ""
+msgstr "Movimento contabile"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__move_line_label
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_filter
 #: model_terms:ir.ui.view,arch_db:sustainability.carbon_line_origin_tree
 msgid "Label"
-msgstr ""
+msgstr "Etichetta"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_distribution_line__write_uid
