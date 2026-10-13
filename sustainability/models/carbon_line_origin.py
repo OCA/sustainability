@@ -162,15 +162,13 @@ class CarbonLineOrigin(models.Model):
             "account.move.line": "move_line_id",
         }
 
-    """
-    Real many2one fields that are computed from the fake Many2one
-    Other fields are in submodules:
-    - sustainability_purchase: purchase_line_id
-    - sustainability_hr_expense_report: expense_id
-    - etc...
+    # Real many2one fields that are computed from the fake Many2one
+    # Other fields are in submodules:
+    # - sustainability_purchase: purchase_line_id
+    # - sustainability_hr_expense_report: expense_id
+    # - etc...
 
-    These are useful to create related fields!
-    """
+    # These are useful to create related fields!
 
     @api.depends("res_model", "res_id")
     def _compute_company_id(self):
