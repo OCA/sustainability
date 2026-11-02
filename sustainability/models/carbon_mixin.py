@@ -211,7 +211,7 @@ class CarbonMixin(models.AbstractModel):
     )
     carbon_in_distribution_template_id = fields.Many2one(
         "carbon.distribution.template",
-        string="Distribution Template",
+        string="Distribution Template Purchases",
         ondelete="set null",
     )
     carbon_in_distribution_line_ids = fields.One2many(
@@ -254,7 +254,7 @@ class CarbonMixin(models.AbstractModel):
     )
     carbon_out_distribution_template_id = fields.Many2one(
         "carbon.distribution.template",
-        string="Distribution Template",
+        string="Distribution Template Sales",
         ondelete="set null",
     )
     carbon_out_distribution_line_ids = fields.One2many(
