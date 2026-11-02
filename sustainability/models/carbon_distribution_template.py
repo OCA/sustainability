@@ -117,12 +117,12 @@ class CarbonDistributionTemplate(models.Model):
             dict(
                 field="product_template_qty",
                 icon="fa-th-list",
-                string=_("Product Templates"),
+                string=cls.env._("Product Templates"),
             ),
             # Product Variants button
             dict(
                 field="product_product_qty",
                 icon="fa-th-list",
-                string=_("Product Variants"),
+                string=cls.env._("Product Variants"),
             ),
         ]

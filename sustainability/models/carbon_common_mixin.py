@@ -17,13 +17,14 @@ class CarbonCommonMixin(models.AbstractModel):
     def _generate_action(
         self,
         model: str,
-        title: str = _("Carbon Footprint for"),
+        title: str | None = None,
         ids: list[int] | None = None,
         domain: list | None = None,
     ) -> dict:
         """Generate an action dictionary for opening a new window in the Odoo UI."""
         self.ensure_one()
 
+        title = title or self.env._("Carbon Footprint for")
         ids = ids or []
         domain = domain or []
 
@@ -127,7 +128,7 @@ class CarbonCommonMixin(models.AbstractModel):
 
         We will check if the field exists on the model, and if it doesn't, we will not add the button to the list.
         """
-        CARBON_FOOTPRINT_STRING = _("Carbon Footprint")
+        CARBON_FOOTPRINT_STRING = cls.env._("Carbon Footprint")
         button_list = [
             # Carbon origin button
             dict(

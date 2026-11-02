@@ -1,4 +1,4 @@
-from odoo import _, api, fields, models
+from odoo import api, fields, models
 
 
 class ResPartner(models.Model):
@@ -21,9 +21,9 @@ class ResPartner(models.Model):
         res.append(
             dict(
                 name="carbon_freight_transport_mode",
-                string=_("Transport Mode"),
+                string=cls.env._("Transport Mode"),
                 group_name="group_carbon_freight_settings",
-                group_string=_("Climatiq API"),
+                group_string=cls.env._("Climatiq API"),
             ),
         )
         return res
