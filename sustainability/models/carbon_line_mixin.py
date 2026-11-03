@@ -228,7 +228,7 @@ class CarbonLineMixin(models.AbstractModel):
             record, kw_arguments = line._get_carbon_computation_record_and_kwargs()
 
             if record is None:
-                _logger.warning(
+                _logger.debug(
                     f"Skip carbon compute for {line._name}({line.id}) - '{line.display_name}' - no valid carbon record found"
                 )
                 skipped_lines |= line

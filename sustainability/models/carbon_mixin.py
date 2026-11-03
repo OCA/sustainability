@@ -211,7 +211,7 @@ class CarbonMixin(models.AbstractModel):
     )
     carbon_in_distribution_template_id = fields.Many2one(
         "carbon.distribution.template",
-        string="Distribution Template",
+        string="Distribution Template Purchases",
         ondelete="set null",
     )
     carbon_in_distribution_line_ids = fields.One2many(
@@ -254,7 +254,7 @@ class CarbonMixin(models.AbstractModel):
     )
     carbon_out_distribution_template_id = fields.Many2one(
         "carbon.distribution.template",
-        string="Distribution Template",
+        string="Distribution Template Sales",
         ondelete="set null",
     )
     carbon_out_distribution_line_ids = fields.One2many(
@@ -611,23 +611,23 @@ class CarbonMixin(models.AbstractModel):
     ):
         model_name = model_name or cls._name
         if model_name not in cls.env:
-            raise UserError(_("Model %s not found", model_name))
+            raise UserError(cls.env._("Model %s not found", model_name))
         model = cls.env[model_name]
         carbon_types = model._carbon_types
         if not carbon_types:
             return None
 
         CARBON_TYPE_NAME_MAPPING = {
-            "in": _("Purchases"),
-            "out": _("Sales"),
+            "in": cls.env._("Purchases"),
+            "out": cls.env._("Sales"),
         }
-        SET_VAR_NAME = _("Set")
-        UNDEFINED_VAR_NAME = _("Undefined")
-        MODE_VAR_NAME = _("Mode")
-        EMISSION_FACTOR_VAR_NAME = _("Emission Factor")
-        OTHER_VAR_NAME = _("Other")
-        SUSTAINABILITY_VAR_NAME = _("Sustainability")
-        DISTRIBUTION_TEMPLATE_VAR_NAME = _("Distribution Template")
+        SET_VAR_NAME = cls.env._("Set")
+        UNDEFINED_VAR_NAME = cls.env._("Undefined")
+        MODE_VAR_NAME = cls.env._("Mode")
+        EMISSION_FACTOR_VAR_NAME = cls.env._("Emission Factor")
+        OTHER_VAR_NAME = cls.env._("Other")
+        SUSTAINABILITY_VAR_NAME = cls.env._("Sustainability")
+        DISTRIBUTION_TEMPLATE_VAR_NAME = cls.env._("Distribution Template")
 
         # Parent element
         # Here without_page is used to generate the page or the group, depending on the context (per example if the view has no notebook then we generate a group)

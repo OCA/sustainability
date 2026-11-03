@@ -682,50 +682,50 @@ class CarbonFactor(models.Model):
             dict(
                 field="account_move_qty",
                 icon="fa-bars",
-                string=_("Account Move"),
+                string=cls.env._("Account Move"),
             ),
             # Child button
             dict(
                 field="child_qty",
                 icon="fa-sitemap",
-                string=_("Children Factors"),
+                string=cls.env._("Children Factors"),
             ),
             # Chart of Account button
             dict(
                 field="chart_of_account_qty",
                 icon="fa-book",
-                string=_("Chart of Account"),
+                string=cls.env._("Chart of Account"),
             ),
             # Product Variants button
             dict(
                 field="product_product_qty",
                 icon="fa-th-list",
-                string=_("Product Variants"),
+                string=cls.env._("Product Variants"),
             ),
             # Product Templates button
             dict(
                 field="product_template_qty",
                 icon="fa-th-list",
-                string=_("Product Templates"),
+                string=cls.env._("Product Templates"),
             ),
             # Product Category button
             dict(
                 field="product_categ_qty",
                 icon="fa-sort",
-                string=_("Product Categories"),
+                string=cls.env._("Product Categories"),
             ),
             # Product Supplier Info button
             dict(
                 field="product_supplierinfo_qty",
                 icon="fa-list",
-                string=_("Product Supplier Infos"),
+                string=cls.env._("Product Supplier Infos"),
                 action="action_see_product_supplier_ids",
             ),
             # Distribution Template button
             dict(
                 field="distribution_template_qty",
                 icon="fa-object-group",
-                string=_("Distribution Templates"),
+                string=cls.env._("Distribution Templates"),
                 action="action_see_distribution_template_ids",
             ),
         ]
