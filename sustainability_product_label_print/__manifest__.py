@@ -6,10 +6,10 @@
     "application": False,
     "auto_install": False,
     "license": "LGPL-3",
-    "author": "MCO2, Open Net Sàrl",
+    "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jacopobacci"],
     "development_status": "Production/Stable",
-    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "website": "https://github.com/OCA/sustainability",
     "depends": ["sustainability"],
     "data": [
         "report/product_product_templates.xml",

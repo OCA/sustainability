@@ -3,11 +3,11 @@
 {
     "name": "Sustainability Employee Commuting",
     "version": "18.0.1.2.1",
-    "author": "MCO2, Open Net Sàrl",
+    "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["bonnetadam", "jacopobacci"],
     "development_status": "Production/Stable",
     "category": "Accounting/Sustainability",
-    "website": "https://github.com/sustainability-suite/sustainability-odoo",
+    "website": "https://github.com/OCA/sustainability",
     "summary": "Module for employee commuting co2",
     "depends": ["sustainability", "hr_contract", "hr_homeworking"],
     "data": [
