@@ -4,7 +4,7 @@
 {
     "name": "Sustainability MIS Builder",
     "summary": "Provide CO2e accounting lines data for MIS builder reports",
-    "version": "18.0.1.1.0",
+    "version": "18.0.1.1.1",
     "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jguenat"],
     "development_status": "Production/Stable",

@@ -1,7 +1,7 @@
 {
     "name": "Sustainability Purchase Stock",
     "category": "Purchase",
-    "version": "18.0.1.2.0",
+    "version": "18.0.1.2.1",
     "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jacopobacci"],
     "development_status": "Production/Stable",

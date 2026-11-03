@@ -1,6 +1,6 @@
 {
     "name": "Sustainability Purchase",
-    "version": "18.0.1.6.0",
+    "version": "18.0.1.6.1",
     "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jguenat", "bonnetadam", "jacopobacci"],
     "development_status": "Production/Stable",
