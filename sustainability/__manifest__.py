@@ -3,7 +3,7 @@
 
 {
     "name": "Sustainability",
-    "version": "18.0.1.12.3",
+    "version": "18.0.1.12.4",
     "author": "MCO2, Open Net Sàrl, Odoo Community Association (OCA)",
     "maintainers": ["jguenat", "bonnetadam", "jacopobacci"],
     "development_status": "Production/Stable",
