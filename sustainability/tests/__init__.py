@@ -10,3 +10,4 @@ from . import test_factor_domain
 from . import test_account_move
 from . import test_line_origin
 from . import test_distribution_line
+from . import test_res_company
