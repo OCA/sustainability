@@ -6,120 +6,122 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"Last-Translator: Automatically generated\n"
+"PO-Revision-Date: 2026-11-10 23:46+0000\n"
+"Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.15.2\n"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__account_id
 msgid "Account"
-msgstr ""
+msgstr "Account"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__balance
 msgid "CO2 Balance (Kg)"
-msgstr ""
+msgstr "Saldo CO2 (Kg)"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__credit
 msgid "CO2 Credit (Kg)"
-msgstr ""
+msgstr "Credito CO2 (Kg)"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__debit
 msgid "CO2 Debit (Kg)"
-msgstr ""
+msgstr "Debito CO2 (Kg)"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__carbon_currency_id
 msgid "Carbon Currency"
-msgstr ""
+msgstr "Valuta carbonio"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__company_id
 msgid "Company"
-msgstr ""
+msgstr "Azienda"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__date
 msgid "Date"
-msgstr ""
+msgstr "Data"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nome visualizzato"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__journal_id
 msgid "Journal"
-msgstr ""
+msgstr "Registro"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__move_id
 msgid "Journal Entry"
-msgstr ""
+msgstr "Registrazione contabile"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__move_line_id
 msgid "Journal Items"
-msgstr ""
+msgstr "Movimenti contabili"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__name
 msgid "Label"
-msgstr ""
+msgstr "Etichetta"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Ultima modifica il"
 
 #. module: sustainability_mis_builder
 #: model:ir.model,name:sustainability_mis_builder.model_mis_carbon_account_move_line
 msgid "MIS Carbon Account Line"
-msgstr ""
+msgstr "Riga conto carbonio MIS"
 
 #. module: sustainability_mis_builder
 #: model:ir.model,name:sustainability_mis_builder.model_mis_report_instance_period
 msgid "MIS Report Instance Period"
-msgstr ""
+msgstr "Periodo istanza report MIS"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__partner_id
 msgid "Partner"
-msgstr ""
+msgstr "Partner"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields.selection,name:sustainability_mis_builder.selection__mis_carbon_account_move_line__state__posted
 msgid "Posted"
-msgstr ""
+msgstr "Pubblicato"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,field_description:sustainability_mis_builder.field_mis_carbon_account_move_line__state
 msgid "Status"
-msgstr ""
+msgstr "Stato"
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,help:sustainability_mis_builder.field_mis_carbon_account_move_line__move_id
 msgid "The journal entry of this CO2 entry line."
-msgstr ""
+msgstr "La registrazione contabile di questa riga CO2."
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields,help:sustainability_mis_builder.field_mis_carbon_account_move_line__move_line_id
 msgid "The journal item of this CO2 entry line."
-msgstr ""
+msgstr "La voce contabile di questa riga CO2."
 
 #. module: sustainability_mis_builder
 #: model:ir.model.fields.selection,name:sustainability_mis_builder.selection__mis_carbon_account_move_line__state__draft
 msgid "Unposted"
-msgstr ""
+msgstr "Non registrato"
