@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2026-11-10 23:46+0000\n"
+"PO-Revision-Date: 2026-11-11 12:46+0000\n"
 "Last-Translator: mymage <stefano.consolaro@mymage.it>\n"
 "Language-Team: none\n"
 "Language: it\n"
@@ -1955,7 +1955,7 @@ msgstr "Registrazione contabile"
 #: model:ir.model,name:sustainability.model_account_move_line
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__move_line_id
 msgid "Journal Item"
-msgstr "Voce contabile"
+msgstr "Movimento contabile"
 
 #. module: sustainability
 #: model:ir.model.fields,field_description:sustainability.field_carbon_line_origin__move_line_label
