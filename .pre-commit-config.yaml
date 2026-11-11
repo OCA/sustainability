@@ -21,7 +21,7 @@ exclude: |
   # You don't usually want a bot to modify your legal texts
   (LICENSE.*|COPYING.*)
 default_language_version:
-  python: python3
+  python: python3.12
   node: "22.9.0"
 repos:
   - repo: local
@@ -38,28 +38,33 @@ repos:
         entry: found a en.po file
         language: fail
         files: '[a-zA-Z0-9_]*/i18n/en\.po$'
+      - id: obsolete dotfiles
+        name: obsolete dotfiles
+        entry: found obsolete files; remove them
+        files: '^(\.travis\.yml|\.t2d\.yml|CONTRIBUTING\.md|\.prettierrc\.yml|\.eslintrc\.yml)$'
+        language: fail
   - repo: https://github.com/sbidoul/whool
     rev: v1.3
     hooks:
       - id: whool-init
   - repo: https://github.com/oca/maintainer-tools
-    rev: bf9ecb9938b6a5deca0ff3d870fbd3f33341fded
+    rev: 31bdbd8e4cb94be6534f0e82b1cafb84a455f671
     hooks:
       # update the NOT INSTALLABLE ADDONS section above
       - id: oca-update-pre-commit-excluded-addons
       - id: oca-fix-manifest-website
-        args: ["https://github.com/sustainability-suite/sustainability-odoo"]
+        args: ["https://github.com/OCA/sustainability"]
       - id: oca-gen-addon-readme
         args:
           - --addons-dir=.
           - --branch=19.0
-          - --org-name=sustainability-suite
-          - --repo-name=sustainability-odoo
+          - --org-name=OCA
+          - --repo-name=sustainability
           - --if-source-changed
           - --keep-source-digest
       - id: oca-gen-external-dependencies
   - repo: https://github.com/OCA/odoo-pre-commit-hooks
-    rev: v0.1.6
+    rev: v0.1.7
     hooks:
       - id: oca-checks-po
         args:
@@ -121,7 +126,7 @@ repos:
         args: [--fix, --exit-non-zero-on-fix]
       - id: ruff-format
   - repo: https://github.com/OCA/pylint-odoo
-    rev: v9.3.15
+    rev: v10.0.6
     hooks:
       - id: pylint_odoo
         name: pylint with optional checks
